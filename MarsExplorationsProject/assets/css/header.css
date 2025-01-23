@@ -1,0 +1,80 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 50px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.site-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.search-form {
+  flex-grow: 1;
+  display: flex;
+  margin: 0 40px;
+  border: none;
+}
+.search-form input {
+  flex-grow: 1;
+  padding: 5px 10px;
+  color: #000;              /* Текст внутри input — чёрный */
+  background-color: #fff;   /* Белый фон */
+  border: 1px solid #fff; 
+  border-radius: 20px 0 0 20px; /* Закругленные края */
+  outline: none; /* Убираем рамку при фокусе */
+}
+.search-form input:focus {
+  outline: none; /* Убираем рамку при фокусе */
+}
+.search-form button {
+  padding: 5px 10px;
+  margin-left: -4px;
+  z-index: -1;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0 20px 20px 0;
+  outline: none;
+}
+.search-form button:focus {
+  outline: none;
+}
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-nav ul li {
+  margin-left: 20px;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.site-nav a:hover {
+  text-decoration: underline;
+}
+.icon-user {
+  font-size: 24px;
+}

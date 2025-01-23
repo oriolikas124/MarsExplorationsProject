@@ -1,0 +1,45 @@
+.search-form {
+  position: relative;
+}
+
+.search-form input {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+#autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.autocomplete-item {
+  padding: 8px;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  outline: none;
+}
+
+.autocomplete-item:focus {
+  outline: none;
+}
+
+.autocomplete-item:hover {
+  background: #f2f2f2;
+}
+
+.no-result {
+  padding: 8px;
+  color: #999;
+}
